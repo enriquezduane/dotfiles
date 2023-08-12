@@ -1,0 +1,6 @@
+vim.keymap.set("n", "J", "<C-d>zz", { silent = true })
+vim.keymap.set("n", "K", "<C-u>zz", { silent = true })
+vim.keymap.set("n", "<Tab>", "<Cmd>bnext!<CR>", { silent = true })
+vim.keymap.set("n", "<S-Tab>", "<Cmd>bprev!<CR>", { silent = true })
+vim.keymap.set("n", "<leader>x", "<Cmd>bdelete!<CR>", { silent = true })
+vim.keymap.set("n", "<Esc>", "<Esc><Cmd>noh<CR>", { silent = true })
