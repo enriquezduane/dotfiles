@@ -1,8 +1,0 @@
-mpd_host = "localhost"
-mpd_port = "6600"
-mpd_music_dir = "~/Music"
-
-song_columns_list_format = (20)[]{a} (60)[white]{t|f:Title} (10)[magenta]{l}
-
-search_engine_default_search_mode = 2
-search_engine_display_mode = classic
