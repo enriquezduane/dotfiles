@@ -32,7 +32,3 @@ vim.keymap.set("n", "<leader>fg", function() fzf.live_grep() end, { silent = tru
 vim.keymap.set("n", "<leader>fb", function() fzf.buffers() end, { silent = true, desc = "FzfLua Buffers" })
 vim.keymap.set("n", "<leader>fo", function() fzf.oldfiles() end, { silent = true, desc = "FzfLua Old Files (History)" })
 vim.keymap.set("n", "<leader>fr", function() fzf.resume() end, { silent = true, desc = "FzfLua Resume Last Search" })
-
-
--- Format as table.
-vim.keymap.set('v', '<leader>ct', ':!column -t<CR>', { desc = 'Format as table' })
