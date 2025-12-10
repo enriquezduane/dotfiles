@@ -1,5 +1,5 @@
 # duane's dotfiles
-
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/a62123f5-9766-4bbe-8a7d-4822e0bdce7f" />
 
 ## My Machines
 
