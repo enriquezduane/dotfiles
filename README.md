@@ -3,9 +3,9 @@
 
 ## My Machines
 
-Host:       ThinkPad T14 Gen 5 AMD & Macbook Pro 14" (2021)
-OS:         Fedora Linux (Everything) & macOS
-Theme:      Everforest Dark Hard
+- Host:       ThinkPad T14 Gen 5 AMD & Macbook Pro 14" (2021)
+- OS:         Fedora Linux (Everything) & macOS
+- Theme:      Everforest Dark Hard
 
 
 ## Philosophy
