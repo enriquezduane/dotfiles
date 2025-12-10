@@ -1,5 +1,4 @@
 -- Global variables
-vim.g.projects_dir = vim.env.HOME .. '/Developer'
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
@@ -39,7 +38,6 @@ vim.opt.shada = "!,'20,<50,s10,h"
 vim.opt.undofile = true
 vim.opt.clipboard:append("unnamedplus")
 vim.opt.backspace = "indent,eol,start"
-vim.opt.iskeyword:remove("_")
 vim.opt.jumpoptions = "stack,view"
 vim.opt.completeopt = "menuone,noinsert,noselect"
 
@@ -54,7 +52,6 @@ vim.opt.timeoutlen = 300
 vim.opt.signcolumn = "yes"
 vim.opt.wrap = true
 vim.opt.listchars = { tab = "→ ", trail = "·", nbsp = "␣" }
-
 
 -- Split behavior
 vim.opt.splitbelow = true
