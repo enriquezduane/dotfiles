@@ -11,3 +11,8 @@ tmux:
     mkdir -p {{config_dir}}
     ln -sfn {{dotfiles_dir}}/tmux {{config_dir}}/tmux
     echo "tmux linked to {{config_dir}}/tmux"
+
+foot:
+    mkdir -p {{config_dir}}
+    ln -sfn {{dotfiles_dir}}/foot {{config_dir}}/foot
+    echo "foot linked to {{config_dir}}/foot"
