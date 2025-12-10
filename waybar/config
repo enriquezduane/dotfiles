@@ -1,0 +1,60 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 35,
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": [],
+    "modules-right": ["power-profiles-daemon", "backlight", "wireplumber", "network", "battery", "clock"],
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}"
+    },
+
+    "power-profiles-daemon": {
+        "format": "PPD: {icon}",
+        "tooltip-format": "Driver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "DEF",
+            "performance": "PER",
+            "balanced": "BAL",
+            "power-saver": "PS"
+        }
+    },
+
+    "backlight": {
+        "format": "BRT: {percent}"
+    },
+
+    "wireplumber": {
+        "format": "VOL: {volume}",
+        "format-muted": "VOL: MUTED"
+    },
+
+    "network": {
+        "format-wifi": "WIFI: YES",
+        "format-ethernet": "ETH: YES",
+        "format-disconnected": "WIFI: NOPE",
+        "format-disabled": "WIFI: OFF",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 40,
+            "critical": 20
+        },
+        "format": "BAT: {capacity}",
+        "format-charging": "BAT: {capacity}",
+        "format-plugged": "BAT: {capacity}",
+        "tooltip-format": "{time} remaining\nPower draw: {power}W"
+    },
+
+    "clock": {
+        "format": "{:%b %d %Y, %I:%M %p}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    }
+}

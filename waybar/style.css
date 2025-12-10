@@ -1,0 +1,89 @@
+@define-color bg #272e33;
+@define-color fg #d3c6aa;
+@define-color red #e67e80;
+@define-color green #a7c080;
+@define-color yellow #dbbc7f;
+@define-color blue #7fbbb3;
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 15px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: @bg;
+    color: @fg;
+}
+
+/* Workspaces */
+#workspaces button {
+    padding: 0 10px;
+    color: #859289; /* Greyed out inactive */
+}
+
+#workspaces button.focused {
+    color: @fg;
+    background-color: #333c43; /* Slightly lighter bg for active */
+}
+
+#workspaces button.urgent {
+    color: @bg;
+    background-color: @red;
+}
+
+/* General Modules Styling */
+#power-profiles-daemon,
+#backlight,
+#wireplumber,
+#network,
+#battery,
+#clock,
+#mode {
+    padding: 0 10px;
+    color: @fg;
+}
+
+/* --- NETWORK --- */
+/* WIFI: YES (Connected) */
+#network.connected {
+    color: @green;
+}
+
+/* WIFI: NOPE (Disconnected) or OFF (Disabled) */
+#network.disconnected,
+#network.disabled {
+    color: @red;
+}
+
+/* --- BATTERY --- */
+/* Charging is ALWAYS Green */
+#battery.charging,
+#battery.plugged {
+    color: @green;
+}
+
+/*
+   Critical is RED (<= 20%), but only if NOT charging.
+   This ensures that plugging in immediately turns it green.
+*/
+#battery.critical:not(.charging) {
+    color: @red;
+}
+
+/* Warning is YELLOW (<= 30%), but only if NOT charging */
+#battery.warning:not(.charging) {
+    color: @yellow;
+}
+
+/* --- POWER PROFILES --- */
+#power-profiles-daemon.performance {
+    color: @red;
+}
+
+#power-profiles-daemon.power-saver {
+    color: @green;
+}
