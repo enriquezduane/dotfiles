@@ -34,6 +34,7 @@ RESET="\[\033[0m\]"
 
 # Editor
 alias vim='nvim'
+alias vi='vim'
 
 # Set Prompt: [User@Host] [Path] [GitBranch]
 PS1="${GREEN}\u@\h${RESET} ${BLUE}\w${RESET}${RED}\$(parse_git_branch)${RESET} \$ "
