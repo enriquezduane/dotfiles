@@ -1,0 +1,39 @@
+# Appearance
+font=IBM Plex Mono
+font-size=24
+ignore-empty-password
+show-failed-attempts
+
+# Colors (Everforest Dark Hard)
+color=272E33
+bs-hl-color=E67E80
+caps-lock-bs-hl-color=E67E80
+caps-lock-key-hl-color=A7C080
+
+# Ring Colors
+inside-color=272E33
+inside-clear-color=272E33
+inside-caps-lock-color=272E33
+inside-ver-color=272E33
+inside-wrong-color=272E33
+
+ring-color=3A454A
+ring-clear-color=A7C080
+ring-caps-lock-color=E69875
+ring-ver-color=83C092
+ring-wrong-color=E67E80
+
+line-color=272E33
+line-clear-color=272E33
+line-caps-lock-color=272E33
+line-ver-color=272E33
+line-wrong-color=272E33
+
+key-hl-color=A7C080
+separator-color=272E33
+
+text-color=00000000
+text-clear-color=00000000
+text-caps-lock-color=00000000
+text-ver-color=00000000
+text-wrong-color=00000000
