@@ -3,9 +3,6 @@ vim.g.projects_dir = vim.env.HOME .. '/Developer'
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- Colorscheme
-vim.cmd.colorscheme 'custom-default'
-
 -- Display
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
@@ -62,4 +59,3 @@ vim.opt.listchars = { tab = "→ ", trail = "·", nbsp = "␣" }
 -- Split behavior
 vim.opt.splitbelow = true
 vim.opt.splitright = true
-
