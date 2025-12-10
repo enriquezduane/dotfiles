@@ -1,0 +1,4 @@
+Fix Grammar	Fix the grammar and spelling in the following text, keeping the tone professional:
+Explain Like I'm 5	Explain this concept simply, as if I were a 5-year-old using analogies:
+Code Review	Act as a senior Golang engineer. Review this code for performance, security, and idiomatic patterns:
+Summarize	Summarize the following text into 3 distinct bullet points:
