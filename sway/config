@@ -53,7 +53,7 @@ bindsym $mod+q kill
 bindsym $mod+Shift+c reload
 
 # Toggle Waybar (useful for distraction-free mode)
-bindsym $mod+b exec pkill -USR1 waybar
+bindsym $mod+b exec pkill waybar || waybar
 
 # Keybindings: Workspaces
 bindsym $mod+1 workspace number 1
