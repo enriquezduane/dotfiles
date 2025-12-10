@@ -20,7 +20,11 @@
 Automation is handled via a self-documented Justfile (you need to install just OR just copy the commands).
 
 1. Clone repository
-   git clone https://github.com/enriquezduane/dotfiles.git
+```
+git clone https://github.com/enriquezduane/dotfiles.git
+```
 
 2. View available recipes
-   just --list
+```
+just --list
+```
