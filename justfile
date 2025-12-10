@@ -5,6 +5,9 @@ config_dir := home_dir + "/.config"
 nvim:
     ln -sfn {{dotfiles_dir}}/nvim {{config_dir}}/nvim
 
+vim:
+    ln -sfn {{dotfiles_dir}}/vim/.vimrc {{home_dir}}/.vimrc
+
 tmux:
     ln -sfn {{dotfiles_dir}}/tmux {{config_dir}}/tmux
 
