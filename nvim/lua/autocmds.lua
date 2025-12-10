@@ -18,17 +18,6 @@ vim.api.nvim_create_autocmd("BufReadPost", {
     end,
 })
 
--- Enable spell checking and line wrapping for markdown files
-vim.api.nvim_create_autocmd("FileType", {
-    group = augroup,
-    pattern = "markdown",
-    callback = function()
-        vim.b.completion = false
-        vim.opt_local.spell = true
-        vim.opt_local.linebreak = true
-    end,
-})
-
 
 -- Autoformat on save
 vim.api.nvim_create_autocmd("BufWritePre", {
