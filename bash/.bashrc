@@ -38,3 +38,10 @@ alias vim='nvim'
 
 # Set Prompt: [User@Host] [Path] [GitBranch]
 PS1="${GREEN}\u@\h${RESET} ${BLUE}\w${RESET}${RED}\$(parse_git_branch)${RESET} \$ "
+
+export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share"
+
+# 2. Make Obsidian (and Discord/VSCode) run natively on Wayland (no blur)
+export ELECTRON_OZONE_PLATFORM_HINT=auto
+
+eval "$(/home/duane/.local/bin/mise activate bash)"
