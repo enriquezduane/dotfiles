@@ -7,6 +7,18 @@ return {
             return vim.bo.filetype ~= "markdown"
         end,
 
+        -- Configure completion selection behavior
+        completion = {
+            list = {
+                selection = {
+                    -- Set to false so the menu opens with no item selected.
+                    -- This allows your first Tab press to select the first item.
+                    preselect = false,
+                    auto_insert = true,
+                }
+            }
+        },
+
         keymap = {
             -- Set preset to 'none' to disable default keymaps and create your own.
             preset = 'none',
