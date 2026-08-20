@@ -37,6 +37,8 @@ alias vi='/usr/bin/vim'
 alias vim='nvim'
 
 # Set Prompt: [User@Host] [Path] [GitBranch]
+PROMPT_DIRTRIM=1
+
 PS1="${GREEN}\u@\h${RESET} ${BLUE}\w${RESET}${RED}\$(parse_git_branch)${RESET} \$ "
 
 export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share"
