@@ -7,6 +7,10 @@ return {
     settings = {
         basedpyright = {
             disableOrganizeImports = true,
+            analysis = {
+                -- Options: "off", "basic", "standard", "strict", "recommended", "all"
+                typeCheckingMode = "basic",
+            },
         },
     },
 }
