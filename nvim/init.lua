@@ -1,5 +1,6 @@
+vim.loader.enable()
+
 require("settings")
-require("config.lazy")
 require("lsp")
 require("keymaps")
 require("autocmds")

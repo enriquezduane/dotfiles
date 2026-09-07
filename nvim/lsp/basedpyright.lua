@@ -10,6 +10,8 @@ return {
             analysis = {
                 -- Options: "off", "basic", "standard", "strict", "recommended", "all"
                 typeCheckingMode = "basic",
+                reportUnusedVariable = "none",
+                reportUnusedImport = "none",
             },
         },
     },

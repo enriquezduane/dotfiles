@@ -17,19 +17,3 @@ vim.api.nvim_create_autocmd("BufReadPost", {
         end
     end,
 })
-
--- Autoformat on save
--- vim.api.nvim_create_autocmd("BufWritePre", {
---     pattern = "*",
---     callback = function()
---         vim.lsp.buf.format()
---     end,
--- })
-
--- Autoupdate lazy
-vim.api.nvim_create_autocmd("VimEnter", {
-    group = vim.api.nvim_create_augroup("LazyAutoUpdate", { clear = true }),
-    callback = function()
-        require("lazy").update({ show = false, wait = false })
-    end,
-})

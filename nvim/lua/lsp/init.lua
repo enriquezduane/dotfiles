@@ -7,11 +7,12 @@ vim.lsp.enable({
     "gopls",
     "ruff",
     "basedpyright",
+    "ts_ls",
 })
 
 -- Diagnostic signs and configuration
 vim.diagnostic.config({
-    virtual_text = true,
+    virtual_text = false,
     underline = true,
     signs = {
         text = {
@@ -27,17 +28,4 @@ vim.diagnostic.config({
     },
     update_in_insert = false,
     severity_sort = true,
-})
-
--- Format on save (ignoring type-checkers like basedpyright)
-vim.api.nvim_create_autocmd("BufWritePre", {
-    group = vim.api.nvim_create_augroup("UserLspFormat", { clear = true }),
-    callback = function(args)
-        vim.lsp.buf.format({
-            bufnr = args.buf,
-            filter = function(client)
-                return client.name ~= "basedpyright" and client.name ~= "pyright"
-            end,
-        })
-    end,
 })
