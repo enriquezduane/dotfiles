@@ -7,16 +7,20 @@ require("conform").setup({
         c = { "clang-format" },
         cpp = { "clang-format" },
         go = { "gofmt" },
-        javascript = { "prettierd", "prettier", stop_after_first = true },
-        typescript = { "prettierd", "prettier", stop_after_first = true },
-        javascriptreact = { "prettierd", "prettier", stop_after_first = true },
-        typescriptreact = { "prettierd", "prettier", stop_after_first = true },
-        html = { "prettierd", "prettier", stop_after_first = true },
-        css = { "prettierd", "prettier", stop_after_first = true },
-        json = { "prettierd", "prettier", stop_after_first = true },
+        javascript = { "prettierd" },
+        typescript = { "prettierd" },
+        javascriptreact = { "prettierd" },
+        typescriptreact = { "prettierd" },
+        html = { "prettierd" },
+        css = { "prettierd" },
+        json = { "prettierd" },
     },
+
     format_on_save = {
         timeout_ms = 500,
-        lsp_format = "fallback",
+        lsp_format = "never",
     },
+
+    notify_on_error = true,
+    notify_no_formatters = false,
 })
