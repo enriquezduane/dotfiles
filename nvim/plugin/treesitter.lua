@@ -17,7 +17,7 @@ vim.pack.add({
 require("nvim-treesitter.configs").setup({
     ensure_installed = {
         "c", "cpp", "go", "lua", "python", "vim", "vimdoc", "markdown",
-        "javascript", "typescript", "tsx", "html", "css", "json",
+        "javascript", "typescript", "tsx", "html", "css", "json", "astro", "markdown_inline"
     },
     highlight = { enable = true },
     indent = { enable = true },
