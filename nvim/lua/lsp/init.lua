@@ -8,6 +8,7 @@ vim.lsp.enable({
     "ruff",
     "basedpyright",
     "ts_ls",
+    "astro",
 })
 
 -- Diagnostic signs and configuration

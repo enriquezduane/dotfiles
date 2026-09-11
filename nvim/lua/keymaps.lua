@@ -63,3 +63,15 @@ vim.keymap.set("n", "gd", function() require("mini.extra").pickers.lsp({ scope =
 vim.keymap.set("n", "gr", function() require("mini.extra").pickers.lsp({ scope = "references" }) end,
     { desc = "LSP Goto References" })
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "LSP Code Actions" })
+
+-- Toggle autocomplete (blink) local autocomplete_enabled = true
+
+vim.api.nvim_create_user_command("ToggleAutocomplete", function()
+    autocomplete_enabled = not autocomplete_enabled
+    require("blink.cmp.config").enabled = function()
+        return autocomplete_enabled and (vim.bo.filetype ~= "markdown")
+    end
+    print("Autocomplete " .. (autocomplete_enabled and "enabled" or "disabled"))
+end, { desc = "Toggle autocomplete" })
+
+vim.keymap.set("n", "<leader>ta", "<Cmd>ToggleAutocomplete<CR>", { desc = "Toggle autocomplete" })
